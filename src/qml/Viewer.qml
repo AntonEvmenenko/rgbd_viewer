@@ -154,7 +154,7 @@ View3D {
 
     Timer {
         id: inactivityTimer
-        interval: 2000
+        interval: 5000
         repeat: false
         running: false
         onTriggered: startAnimation.start()
