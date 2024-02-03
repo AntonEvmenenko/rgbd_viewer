@@ -23,7 +23,7 @@ View3D {
         id: originNode
         PerspectiveCamera {
             id: cameraNode
-            position: Qt.vector3d(0, 0, 135)
+            position: Qt.vector3d(0, -5, 135)
 
         }
 
