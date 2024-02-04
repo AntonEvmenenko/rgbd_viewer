@@ -5,8 +5,12 @@ set(CMAKE_AUTOMOC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Quick Quick3D)
 
+enable_language("RC")
+set(app_icon_resource_windows "${CMAKE_CURRENT_SOURCE_DIR}/icons/rgbd_viewer.rc")
+
 qt_add_executable(rgbd_viewer
     src/main.cpp
+    ${app_icon_resource_windows}
 )
 
 set_target_properties(rgbd_viewer PROPERTIES
